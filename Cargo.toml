@@ -1,0 +1,36 @@
+[package]
+name = "brap"
+version = { workspace = true }
+edition = { workspace = true }
+# `examples/` is the separate `brap-examples` crate, not examples of this one.
+autoexamples = false
+
+[features]
+default = ["brap-all"]
+runtime = ["dep:linkme"]
+brap = ["runtime"]
+brap-all = ["brap-test-set"]
+brap-test-set = ["brap"]
+
+[dependencies]
+linkme = { workspace = true, optional = true }
+brap-macros = { path = "macros" }
+
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "overhead"
+harness = false
+required-features = ["brap"]
+
+[workspace]
+resolver = "2"
+members = ["examples", "macros"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
+linkme = "0.3.37"

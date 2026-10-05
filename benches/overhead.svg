@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="322" viewBox="0 0 640 322" role="img" aria-label="Cost per measurement, 16 threads recording at once (ns)">
+<style>
+  .surface { fill: #fcfcfb; }
+  .title, .value { fill: #0b0b0b; }
+  .label { fill: #52514e; }
+  .bar { fill: #2a78d6; }
+  .axis { stroke: #c3c2b7; stroke-width: 1; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .title, .value { fill: #ffffff; }
+    .label { fill: #c3c2b7; }
+    .bar { fill: #3987e5; }
+    .axis { stroke: #52514e; }
+  }
+  text { font: 13px ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; dominant-baseline: central; }
+  .title { font-weight: 600; dominant-baseline: auto; }
+  .label { text-anchor: end; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; }
+  .value { font-variant-numeric: tabular-nums; }
+</style>
+<rect class="surface" width="100%" height="100%" rx="6"/>
+<text class="title" x="16" y="24">Cost per measurement, 16 threads recording at once (ns)</text>
+<line class="axis" x1="160" x2="160" y1="34" y2="310"/>
+<text class="label" x="148" y="48.0">stamp!</text><path class="bar" d="M160,40h128.3a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-128.3z"/><text class="value" x="298.3" y="48.0">7.4 ns</text>
+<text class="label" x="148" y="78.0">count!</text><path class="bar" d="M160,70h53.2a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-53.2z"/><text class="value" x="223.2" y="78.0">3.2 ns</text>
+<text class="label" x="148" y="108.0">count! tls</text><path class="bar" d="M160,100h1.9a1.9206481435083285,1.9206481435083285 0 0 1 1.9206481435083285,1.9206481435083285v12.158703712983343a1.9206481435083285,1.9206481435083285 0 0 1 -1.9206481435083285,1.9206481435083285h-1.9z"/><text class="value" x="169.8" y="108.0">0.2 ns</text>
+<text class="label" x="148" y="138.0">record_log2!</text><path class="bar" d="M160,130h53.8a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-53.8z"/><text class="value" x="223.8" y="138.0">3.2 ns</text>
+<text class="label" x="148" y="168.0">record_log2! tls</text><path class="bar" d="M160,160h1.8a1.804989864502886,1.804989864502886 0 0 1 1.804989864502886,1.804989864502886v12.390020270994228a1.804989864502886,1.804989864502886 0 0 1 -1.804989864502886,1.804989864502886h-1.8z"/><text class="value" x="169.6" y="168.0">0.2 ns</text>
+<text class="label" x="148" y="198.0">measure</text><path class="bar" d="M160,190h337.7a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-337.7z"/><text class="value" x="507.7" y="198.0">19.0 ns</text>
+<text class="label" x="148" y="228.0">measure_fine</text><path class="bar" d="M160,220h404.0a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-404.0z"/><text class="value" x="574.0" y="228.0">22.7 ns</text>
+<text class="label" x="148" y="258.0">measure tls</text><path class="bar" d="M160,250h340.5a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-340.5z"/><text class="value" x="510.5" y="258.0">19.2 ns</text>
+<text class="label" x="148" y="288.0">measure_fine tls</text><path class="bar" d="M160,280h392.8a4,4 0 0 1 4,4v8a4,4 0 0 1 -4,4h-392.8z"/><text class="value" x="562.8" y="288.0">22.1 ns</text>
+</svg>

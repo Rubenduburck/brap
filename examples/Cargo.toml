@@ -1,0 +1,17 @@
+[package]
+name = "brap-examples"
+version = { workspace = true }
+edition = { workspace = true }
+publish = false
+
+# The feature surface every instrumented crate declares. `brap-all` enables
+# every compile set; `--no-default-features --features brap` keeps only
+# unconditional sites; `--no-default-features` removes all instrumentation.
+[features]
+default = ["brap-all"]
+brap = ["brap/runtime"]
+brap-all = ["brap-example"]
+brap-example = ["brap"]
+
+[dependencies]
+brap = { path = "..", default-features = false }
