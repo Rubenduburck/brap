@@ -1,7 +1,13 @@
 [package]
 name = "brap"
+description = "Low-overhead latency telemetry for hot code paths: compile-time registered cycle histograms and counters"
 version = { workspace = true }
 edition = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+readme = "README.md"
+keywords = ["latency", "telemetry", "histogram", "profiling", "metrics"]
+categories = ["development-tools::profiling"]
 # `examples/` is the separate `brap-examples` crate, not examples of this one.
 autoexamples = false
 
@@ -14,7 +20,7 @@ brap-test-set = ["brap"]
 
 [dependencies]
 linkme = { workspace = true, optional = true }
-brap-macros = { path = "macros" }
+brap-macros = { path = "macros", version = "0.1.0" }
 
 [dev-dependencies]
 criterion = "0.8.2"
@@ -31,6 +37,8 @@ members = ["examples", "macros"]
 [workspace.package]
 edition = "2024"
 version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/Rubenduburck/brap"
 
 [workspace.dependencies]
 linkme = "0.3.37"

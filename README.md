@@ -26,7 +26,7 @@ brap-all = ["brap-example"]
 brap-example = ["brap"]
 
 [dependencies]
-brap = { version = "0.1", optional = true, features = ["runtime"] }
+brap = { version = "0.1", default-features = false }
 ```
 
 The macros check *your* crate's features, so they must be declared. If they
